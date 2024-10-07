@@ -1,0 +1,18 @@
+.galleryimg{
+    width: 400px;
+    height: 480px;
+    z-index: 1;
+  }
+  .phead{
+    z-index: 2;
+    font-size: 3vh;
+  }
+  
+  .Shss-slide-item{
+    background: none !important; 
+    border: none !important;
+    
+  }
+  .Shss-container {
+    top:50% ;
+  }
