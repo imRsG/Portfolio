@@ -21,8 +21,8 @@ export const Newsletter = () => {
             We're here to help! Send us your queries.
           </p>
           <form
-            action="https://formspree.io/f/xyzygnzd"
-            method="POST"
+            // action="https://formspree.io/f/xyzygnzd"
+            // method="POST"
             onSubmit={handleSubmit}
           >
             <Input
