@@ -9,27 +9,27 @@ export const Cta = () => {
       <div className="container lg:grid lg:grid-cols-2 place-items-center">
         <div className="lg:col-start-1 hover-image">
           <h2 className="text-3xl md:text-4xl font-bold ">
-            All Your
+          Transform Your
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              Ideas & Concepts{" "}
+              Vision Into Reality{" "}
             </span>
-            In One Interface
+            With Our Expertise
           </h2>
           <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-            beatae. Ipsa tempore ipsum iste quibusdam illum ducimus eos. Quasi,
-            sed!
+          Whether it's video editing, web development, game development, or WordPress solutions, 
+          we turn your ideas into stunning digital experiences. Let us handle the technicalities 
+          while you focus on your passion.
           </p>
         </div>
 
         <div className="space-y-4 lg:col-start-2 hover-image">
-          <Button className="w-full md:mr-4 md:w-auto">Request a Demo</Button>
+          <Button className="w-full md:mr-4 md:w-auto">Request a Consultation</Button>
           <Button
             variant="outline"
             className="w-full md:w-auto"
           >
-            View all features
+            Explore Our Services
           </Button>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import AnimateOnScreen from "./ui/AnimateOnScreen";
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -41,10 +42,10 @@ const features: FeatureProps[] = [
 ];
 export const HowItWorks = () => {
   return (
+    <AnimateOnScreen direction="fade">
     <section
       id="howItWorks"
-      className="container text-center mt-20 py-24 sm:py-32 hover-text"
-    >
+      className="container text-center mt-20 py-24 sm:py-32 hover-text">
       <h2 className="text-3xl md:text-4xl font-bold ">
         How It{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -53,11 +54,11 @@ export const HowItWorks = () => {
         Step-by-Step Guide
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-      Transform your digital presence with cutting-edge landing pages and captivating animations.
-       I specialize in crafting visually stunning, high-converting
-       landing pages, as well as dynamic video and logo animations that make your brand stand out.
+        Transform your digital presence with cutting-edge landing pages and captivating animations.
+        I specialize in crafting visually stunning, high-converting
+        landing pages, as well as dynamic video and logo animations that make your brand stand out.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
           <Card
             key={title}
@@ -74,5 +75,7 @@ export const HowItWorks = () => {
         ))}
       </div>
     </section>
+    </AnimateOnScreen>
+      
   );
 };

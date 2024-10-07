@@ -1,6 +1,7 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
 import cubeLeg from "../assets/cube-leg.png";
+import AnimateOnScreen from "./ui/AnimateOnScreen";
 
 interface ServiceProps {
   title: string;
@@ -33,6 +34,7 @@ export const Services = () => {
   return (
     <section className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
+        <AnimateOnScreen direction="left">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold hover-image">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text hover-image">
@@ -65,11 +67,14 @@ export const Services = () => {
             <div className="shadow"></div>
           </div>
         </div>
+        </AnimateOnScreen>
+        <AnimateOnScreen direction="right">
         <img
           src={cubeLeg}
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain hover-image"
           alt="About services"
         />
+        </AnimateOnScreen>
       </div>
     </section>
   );
