@@ -36,7 +36,7 @@ const CursorFollower: React.FC = () => {
       });
     };
   }, [cursorX, cursorY]);
-  const cursorStyle =
+  // const cursorStyle =
     hoverTarget === 'text' || hoverTarget === 'image'
       ? {
           transform: 'scale(4.5)',
