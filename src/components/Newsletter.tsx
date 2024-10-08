@@ -17,7 +17,7 @@ export const Newsletter = () => {
   }
 
   return (
-    <section id="contact-us" className="container grid lg:grid-cols-2 place-items-center gap-10">
+    <section id="Contact-us" className="container grid lg:grid-cols-2 place-items-center gap-10">
       <AnimateOnScreen direction="left">
         <div className="text-center lg:text-start space-y-6 hover-text">
           <h3 className="text-center text-4xl md:text-5xl font-bold">

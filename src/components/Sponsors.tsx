@@ -220,7 +220,7 @@ export const Sponsors: React.FC = () => {
   return (
     <AnimateOnScreen direction='fade'>
      <section
-      id="sponsors"
+      id="Skills"
       className="container pt-24 sm:py-32 hover-text bg-cover bg-center transition-all duration-500 ease-in-out"
       onMouseMove={handleMouseMove}
       style={{ backgroundImage: 'none' }}
