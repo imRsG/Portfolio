@@ -70,7 +70,7 @@
 /* *=========== Green theme =========== */
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 45, 18.18%, 95.69%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
