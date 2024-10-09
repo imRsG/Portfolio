@@ -98,7 +98,7 @@ const secondHalf = galleryItems.slice(8, 16);
 
 const Gallery: React.FC = () => {
   return (
-    <section className="items-center mt-24">
+    <section className="min-h-screen items-center mt-24">
       <div className="bg-transparent mx-auto items-center  h-3/6 justify-center">
         <Shss speed={2}>
           {/* First slider for items 1 to 8 */}

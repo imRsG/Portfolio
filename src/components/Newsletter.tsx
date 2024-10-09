@@ -26,39 +26,41 @@ export const Newsletter = () => {
           <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
             We're here to help! Send us your queries.
           </p>
-          <form onSubmit={handleSubmit}>
-            <Input
-              id="name"
-              type="name"
-              name="name"
-              placeholder="Your Name"
-              className="bg-muted/50 mb-4 dark:bg-muted/80"
-              aria-label="name"
-              required
-            />
-            <Input
-              placeholder="Your Email"
-              className="bg-muted/50 mb-4 dark:bg-muted/80"
-              aria-label="email"
-              id="email"
-              type="email"
-              name="email"
-              required
-            />
-            <ValidationError prefix="Email" field="email" errors={state.errors} />
-            <textarea
-              placeholder="Your Message"
-              className="bg-muted/50 mb-4 dark:bg-muted/80 w-full h-32 md:h-40 lg:h-48 p-4 resize-none rounded-md"
-              aria-label="message"
-              id="message"
-              name="message"
-              required
-            />
-            <br />
-            <Button className="mt-4" type="submit" disabled={state.submitting}>
-              Send Message
-            </Button>
-          </form>
+          <div className="bg-black p-2 bg-transparent rounded-lg">
+            <form onSubmit={handleSubmit}>
+              <Input
+                id="name"
+                type="name"
+                name="name"
+                placeholder="Your Name"
+                className="bg-muted/50 mb-4 dark:bg-muted/80"
+                aria-label="name"
+                required
+              />
+              <Input
+                placeholder="Your Email"
+                className="bg-muted/50 mb-4 dark:bg-muted/80"
+                aria-label="email"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
+              <textarea
+                placeholder="Your Message"
+                className="bg-muted/50 mb-4 dark:bg-muted/80 w-full h-32 md:h-40 lg:h-48 p-4 resize-none rounded-md"
+                aria-label="message"
+                id="message"
+                name="message"
+                required
+              />
+              <br />
+              <Button className="mt-4" type="submit" disabled={state.submitting}>
+                Send Message
+              </Button>
+            </form>
+          </div>
         </div>
       </AnimateOnScreen>
       <div className="z-10">
@@ -71,5 +73,5 @@ export const Newsletter = () => {
         </AnimateOnScreen>
       </div>
     </section>
-  );
+  );
 };
