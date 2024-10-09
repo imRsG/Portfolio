@@ -238,7 +238,7 @@ export const Sponsors: React.FC = () => {
             whileHover={{ scale: 1.1 }}
           >
             <span>{icon}</span>
-            <h3 className="text-xl ms-2 font-bold">{name}</h3>
+            <h3 className="text-xl ms-2 font-bold">{name}</h3>  
           </motion.div>
         ))}
       </div>

@@ -10,8 +10,8 @@ interface PreloaderProps {
 
 const Preloader: React.FC<PreloaderProps> = ({
   videoSrc,
-  displayTime = 3,
-  animationDuration = 1,
+  displayTime = 4,
+  animationDuration = 1.2,
 }) => {
   const preloaderRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
