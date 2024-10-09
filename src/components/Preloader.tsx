@@ -10,8 +10,8 @@ interface PreloaderProps {
 
 const Preloader: React.FC<PreloaderProps> = ({
   videoSrc,
-  displayTime = 4,
-  animationDuration = 1.2,
+  displayTime = 6,
+  animationDuration = 9,
 }) => {
   const preloaderRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -47,7 +47,7 @@ const Preloader: React.FC<PreloaderProps> = ({
         autoPlay
         muted
         loop
-        className="w-full h-full object-cover"
+        className="w-full h-full object-fill md:object-contain"
       />
     </div>
   );
