@@ -4,7 +4,7 @@ import gsap from 'gsap';
 
 interface PreloaderProps {
   videoSrc: string;
-  displayTime?: number; // Duration for which the video is displayed before animating out (in seconds)
+  displayTime?: number; // Duration for which the video is displayed before animating out (in seconds)              
   animationDuration?: number; // Duration of the animation to remove the preloader (in seconds)
 }
 
@@ -20,7 +20,7 @@ const Preloader: React.FC<PreloaderProps> = ({
     const tl = gsap.timeline({
       delay: displayTime,
       onComplete: () => {
-        // Optional: After animation is complete, you could remove the preloader from the DOM
+        // Optional: After animation is complete, you could remove the preloader from the DOM                                    
         if (preloaderRef.current) {
           preloaderRef.current.style.display = 'none';
         }

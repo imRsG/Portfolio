@@ -11,22 +11,22 @@ export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
-        <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10 bg-transparent ">
-          <CardHeader className="flex flex-row items-center gap-4 pb-2 hover-text">
-            <Avatar>
-              <AvatarImage
-                alt=""
-                src="https://avatars.githubusercontent.com/u/55122666?s=400&u=a12926a383ad327d4b634b14f177660a0749627e&v=4"
-              />
-              <AvatarFallback>SH</AvatarFallback>
-            </Avatar>
-            <div className="flex flex-col">
-              <CardTitle className="text-lg">Rishi Gupta</CardTitle>
-              <CardDescription>@imRsG</CardDescription>
-            </div>
-          </CardHeader>
-          {/* <CardContent>This landing page is awesome!</CardContent> */}
-        </Card>
+      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10 bg-transparent ">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2 hover-text">
+          <Avatar>
+            <AvatarImage
+              alt=""
+              src="https://avatars.githubusercontent.com/u/55122666?s=400&u=a12926a383ad327d4b634b14f177660a0749627e&v=4"
+            />
+            <AvatarFallback>SH</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col">
+            <CardTitle className="text-lg">Rishi Gupta</CardTitle>
+            <CardDescription>@imRsG</CardDescription>
+          </div>
+        </CardHeader>
+        {/* <CardContent>This landing page is awesome!</CardContent> */}
+      </Card>
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10 bg-transparent ">
         <CardHeader className="mt-8 flex justify-center items-center pb-2 hover-text">
@@ -96,6 +96,7 @@ export const HeroCards = () => {
         </CardFooter>
       </Card>
       {/* Pricing */}
+
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10 bg-transparent">
         <CardHeader className="hover-text">
           <CardTitle className="flex item-center justify-between">
@@ -104,36 +105,22 @@ export const HeroCards = () => {
               variant="secondary"
               className="text-sm text-primary"
             >
-              Most popular
+              Sample
             </Badge>
           </CardTitle>
-          <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
-          </div>
           <CardDescription>
             {/* Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit. */}
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full" > <a
+            rel="noreferrer noopener"
+            href="#Contact-us"
+            key="Contact-us">
+            Start Free Sample Trial
+          </a>
+          </Button>
         </CardContent>
-        <hr className="w-4/5 m-auto mb-4" />
-        <CardFooter className="flex  ">
-          <div className="space-y-4 ">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
-              (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex hover-text"
-                >
-                  <Check className="text-green-500" />{" "}
-                  <h3 className="ml-2 hover-text">{benefit}</h3>
-                </span>
-              )
-            )}
-          </div>
-        </CardFooter>
       </Card>
       {/* Service */}
       <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10 bg-transparent">

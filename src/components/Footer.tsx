@@ -13,7 +13,7 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-          <img src={LogoIcon} className="object-fill h-24 w-24  flex mt-3 " /> 
+          <img src={LogoIcon} className="object-fill h-24 w-24 flex mt-3 " /> 
           </a>
         </div>
 
